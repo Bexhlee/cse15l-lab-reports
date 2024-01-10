@@ -28,7 +28,7 @@
     <img width="666" alt="image" src="https://github.com/Bexhlee/cse15l-lab-reports/assets/152840466/2d3be735-af4e-4454-9ec9-bb22731a0e2c">
     > **Working Directory:** `/home/lecture1`
     >
-    > *Passing a path to a file to the `cd` file generates an error message because it is not a valid directory. The working directory in the prompt afterwards remains unchanged because the `cd` command terminates due to the error.*
+    > *Passing a path to a file to the `cd` command generates an error message because it is not a valid directory. The working directory in the prompt afterwards remains unchanged because the `cd` command terminates due to the error.*
     > <br>
 
 	<br>
@@ -55,7 +55,7 @@
     <img width="666" alt="image" src="https://github.com/Bexhlee/cse15l-lab-reports/assets/152840466/d1740e6a-051d-4113-b08b-e97769caf8e4">
     > **Working Directory:** `home/lecture1`
     >
-    > *Passing a path to a file to the `ls` file returns the relative path of the file specified. This is because the only item in the specified relative path is the file itself. *
+    > *Passing a path to a file to the `ls` command returns the relative path of the file specified. This is because the only item in the specified relative path is the file itself. *
     > <br>
 
 	<br>
@@ -82,5 +82,5 @@
     <img width="666" alt="image" src="https://github.com/Bexhlee/cse15l-lab-reports/assets/152840466/a5bfe347-ef78-43ed-a50a-fb673862b164">
     > **Working Directory:** `/home/lecture1`
     >
-    > *Passing a path to a file to the `cat` file generates an error mesage beacuse it is not a valid directory. The working directory in the prompt afterwards remains unchanged because the `cd` command terminates due to the error.*
+    > *Passing a path to a file to the `cat` command generates an error mesage beacuse it is not a valid directory. The working directory in the prompt afterwards remains unchanged because the `cd` command terminates due to the error.*
     > <br>
