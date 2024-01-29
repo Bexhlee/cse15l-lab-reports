@@ -12,7 +12,7 @@
     
     > **Working Directory:** `/home`
     >
-    > *Passing no argument to the `cd` command means that the directory changes to itself and therefore the directory is unchanged, as can be observed on the `~` portion of the prompt.* 
+    > *Passing no argument to the `cd` command means that the terminal defaults to changing the current directory to the user's home directory, as can be observed on the `~` portion of the prompt.* 
 	<br>
 
     An example with using the command with a path to a directory as an argument:
@@ -82,5 +82,7 @@
     <img width="666" alt="image" src="https://github.com/Bexhlee/cse15l-lab-reports/assets/152840466/a5bfe347-ef78-43ed-a50a-fb673862b164">
     > **Working Directory:** `/home/lecture1`
     >
-    > *Passing a path to a file to the `cat` command generates an error mesage beacuse it is not a valid directory. The working directory in the prompt afterwards remains unchanged because the `cd` command terminates due to the error.*
+    > * In the given example, the `cat` command is used to display the contents of `en-us.txt` and `zh-cn.txt` sequentially. The contents of these files, `Hello World!` and `你好世界`, are printed to the terminal. The working directory in the prompt remains unchanged as the cat command does not affect the current directory; it only reads and outputs file content.
+    >
+    > 
     > <br>
