@@ -117,12 +117,13 @@ public class ChatServer {
 > - `handleRequest(URI url)` , `getCurrentChatLog()`.
 >   
 > **Arguments and Field Values:**
-> - `URI url`is `http://ieng6-202.ucsd.edu:4000/add-message?s=Hello&user=jpolitz`
-> - `user` is 'jpolitz'
+> - `URI url`is `http://ieng6-202.ucsd.edu:4000/add-message?s=Hello&user=jpolitz`.
+> - `user` is 'jpolitz'.
 > - `message` is `Hello`.
+> - > - `messageCount` incremented by 1.
 > **Field Changes:**
-> - `messageCount` was incremented by 1.
-> - A new `ChatMessage` was added to `messages`.
+> - `messageCount = 1`.
+> - A new `ChatMessage` was added to `messages` as `user = "jpolitz", message = "Hello"`.
 
 <img width="823" alt="Screenshot 2024-01-29 at 9 18 59 PM" src="https://github.com/Bexhlee/cse15l-lab-reports/assets/152840466/89fe45e5-61fe-4464-b840-32b47b43cd25">
 
@@ -130,10 +131,12 @@ public class ChatServer {
 > - `handleRequest(URI url)` , `getCurrentChatLog()`.
 >   
 > **Arguments and Field Values:**
-> - `URI url`is `http://ieng6-202.ucsd.edu:4000/add-message?s=How%20are%20you&user=yash`
-> - `user` is 'jpolitz'
-> - `message` is `Hello`.
+> - `URI url`is `http://ieng6-202.ucsd.edu:4000/add-message?s=How%20are%20you&user=yash`.
+> - `user` is 'yash'.
+> - `message` is `How are you`.
+> - `messageCount` incremented by 1.
+> 
 > **Field Changes:**
-> - `messageCount` was incremented by 1.
-> - A new `ChatMessage` was added to `messages`.
+> - `messageCount = 2`
+> - A new `ChatMessage` was added to `messages` as `user = "yash", message = "How are you"`.
 
