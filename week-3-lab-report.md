@@ -109,6 +109,20 @@ public class ChatServer {
     }
 }
 ```
+### Screenshots
+
 <img width="823" alt="Screenshot 2024-01-29 at 9 18 28 PM" src="https://github.com/Bexhlee/cse15l-lab-reports/assets/152840466/43a60516-0a47-4893-a786-d035e5e6d585">
+
+> **Methods Called:**
+> - `handleRequest(URI url)` , `getCurrentChatLog()`.
+> **Arguments and Field Values:**
+URI url is http://ieng6-202.ucsd.edu:4000/add-message?s=Hello&user=jpolitz.
+user is "jpolitz", message is "Hello".
+messageCount was incremented by 1.
+A new ChatMessage was added to messages.
+Field Changes:
+messages now includes the new message from "jpolitz".
+messageCount increases by 1.
+
 <img width="823" alt="Screenshot 2024-01-29 at 9 18 59 PM" src="https://github.com/Bexhlee/cse15l-lab-reports/assets/152840466/89fe45e5-61fe-4464-b840-32b47b43cd25">
 
