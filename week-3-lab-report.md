@@ -1,6 +1,55 @@
 # Lab Report 2 - Servers and SSH Keys (Week 3)
 
-## Part 1 - `ChatServer.java`
+## Part 1
+Write a web server called `ChatServer` that supports the path and behavior described below. It should keep track of a single string that gets added to by incoming requests. The requests should look like this:
+
+`/add-message?s=<string>&user=<string>`
+
+The effect of this request is to concatenate the string given after `user=`, a colon (`:`), and then the string after `s`, a newline (`\n`), and then respond with the entire string so far. That is, it adds a chat message of the form `<user>: <message>`
+
+So, for example, after
+
+```
+/add-message?s=Hello&user=jpolitz
+```
+
+The page should show
+
+```
+jpolitz: Hello
+```
+
+and after
+
+```
+/add-message?s=How are you&user=yash
+```
+
+the page should show
+
+```
+jpolitz: Hello
+yash: How are you
+```
+
+(Some browsers might show this as `How%20are%20you` with a special character replacing the spaces; don't worry about fixing that for this example. If you want to look it up it has to do with URL encoding, a topic we won't address right now.)
+
+You can assume that the `s=` parameter always comes before the `user=` parameter, and they are always separated by a `&` as shown above.
+
+Show the code for your `ChatServer`, and two screenshots of using `/add-message`.
+
+For **each** of the two screenshots, describe:
+
+- Which methods in your code are called?
+- What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+- How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+
+
+By *values*, we mean specific `String`s, `int`s, `URI`s, and so on. `"abc"` is a value, `456` is a value, `new URI("http://...")` is a value, and so on.)
+
+<br>
+
+### `ChatServer.java`
 
 ```java
 import java.io.IOException;
@@ -140,3 +189,28 @@ public class ChatServer {
 > - `messageCount = 2`
 > - A new `ChatMessage` was added to `messages` as `user = "yash", message = "How are you"`.
 
+## Part 2
+Using the command line, show with `ls` and take screenshots of:
+
+- The absolute path to the *private* key for your SSH key for logging into `ieng6` (on your computer, an EdStem workspace, or on the home directory of the lab computer)
+- The absolute path to the *public* key for your SSH key for logging into `ieng6` (this is the one you copied to your account on ieng6, so it should be a path on ieng6's file system)
+- A terminal interaction where you log into your `ieng6` account *without* being asked for a password.
+
+### Private Key
+<img width="897" alt="Screenshot 2024-01-30 at 11 08 53 AM" src="https://github.com/Bexhlee/cse15l-lab-reports/assets/152840466/47620ab6-422a-441f-acd0-c0a2568446d7">
+
+> **Absolute Path:** `/Users/rebekaheast/.ssh/id_rsa.pub` 
+
+### Public Key
+<img width="897" alt="Screenshot 2024-01-30 at 11 07 46 AM" src="https://github.com/Bexhlee/cse15l-lab-reports/assets/152840466/fd58ebce-1f11-4c45-8f00-36c1ac10c793">
+
+> **Absolute Path:** `/home/linux/ieng6/oce/13/hak033/.ssh/authorized_keys` 
+
+### Successful Log On with Key
+![image](https://github.com/Bexhlee/cse15l-lab-reports/assets/152840466/e9200723-b15e-4ddb-b4ea-ed167b81b15b)
+
+## Part 3
+In a couple of sentences, describe something you learned from lab in week 2 or 3 that you didn't know before.
+
+
+> In the lab, I learned how to effectively use Visual Studio Code (VSCode) as an integrated development environment. This would include understanding its user interface, learning to navigate and manage files within VSCode, and utilizing its built-in terminal for executing various commands. 
