@@ -83,7 +83,7 @@ Along with each option/mode you show, cite your source for how you found out abo
     > > ./technical/subdir/file1.txt:Pattern found in line 3
     > > ./technical/anotherDir/config.txt:pattern instance in line 19
     > > ```
-    > 
+    
     > #### `-r` (recursive)<p>
     > - The `-r` option allows grep to perform a recursive search through directories, looking into every file within the specified directory and its subdirectories.<p>
     >   - `grep -r "functionName" ./technical/src/`<p>
@@ -100,7 +100,7 @@ Along with each option/mode you show, cite your source for how you found out abo
     > > ./technical/docs/readme.md:TODO: Update documentation - line 5
     > >  ./technical/docs/setup/instructions.txt:TODO: Add installation details - line 18
     > > ```
-    > 
+    
     > #### `-v` (invert match)<p>
     > - The `-v` option inverts the search, returning lines that do not match the given pattern.<p>
     >   - `grep -v "excludeThis" ./technical/config.txt`<p>
@@ -117,7 +117,7 @@ Along with each option/mode you show, cite your source for how you found out abo
     > > ./technical/settings/main.conf:All other configurations are included here.
     > > ./technical/settings/user_prefs.conf:User preferences setup.
     > > ```
-    > 
+    
     > #### `-l` (files with matches)<p>
     > - The `-l` option causes `grep` to print only the names of files with matching lines, once for each file, instead of printing the lines that match. This option is particularly useful when you're more interested in knowing which files contain the match rather than seeing every matching line.<p>
     >   - `grep -l "keyword" ./technical/report.txt`<p>
