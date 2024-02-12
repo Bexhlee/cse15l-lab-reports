@@ -199,7 +199,7 @@ Using the command line, show with `ls` and take screenshots of:
 ### Private Key
 <img width="897" alt="Screenshot 2024-01-30 at 11 08 53 AM" src="https://github.com/Bexhlee/cse15l-lab-reports/assets/152840466/47620ab6-422a-441f-acd0-c0a2568446d7">
 
-> **Absolute Path:** `/Users/rebekaheast/.ssh/id_rsa.pub` 
+> **Absolute Path:** `/Users/rebekaheast/.ssh/id_rsa` 
 
 ### Public Key
 <img width="897" alt="Screenshot 2024-01-30 at 11 07 46 AM" src="https://github.com/Bexhlee/cse15l-lab-reports/assets/152840466/fd58ebce-1f11-4c45-8f00-36c1ac10c793">
